@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
-import { columnConfig } from '@/components/Navbar/config/columnConfig';
+import { Routes, Route } from "react-router-dom";
+import { columnConfig } from "@/components/Navbar/config/columnConfig";
 
 export default function App() {
   return (
@@ -7,7 +7,13 @@ export default function App() {
       <Routes>
         {columnConfig.map((route) => {
           const PageComponent = route.component;
-          return <Route key={route.key} path={route.path} element={<PageComponent />} />;
+          return (
+            <Route
+              key={route.key}
+              path={route.path}
+              element={<PageComponent />}
+            />
+          );
         })}
       </Routes>
     </>

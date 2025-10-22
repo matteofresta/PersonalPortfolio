@@ -1,9 +1,9 @@
-import {Navbar} from "@/components/Navbar/Navbar.tsx";
+import { Navbar } from "@/components/Navbar/Navbar.tsx";
 
 export const Home = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
