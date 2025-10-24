@@ -3,5 +3,14 @@
     "Home": "Home",
     "About": "Chi sono",
     "Contact": "Contattami"
+  },
+  "header": {
+    "greeting": "Benvenuto nella mia Pagina",
+    "myName": "Sono Matteo Fresta e sono un programmatore React"
+  },
+  "mainContent": {
+    "title": "La mia attuale esperienza",
+    "myExperience": "Quali sono i miei punti di forza?",
+    "playwright": "Uso Playwright da sei mesi e sono in grado di testare pagine complesse. Grazie al mio lavoro, ho acquisito una varietà di conoscenze."
   }
 }
