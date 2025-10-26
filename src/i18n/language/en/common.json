@@ -11,6 +11,7 @@
   "mainContent": {
     "title": "My Experience",
     "myExperience": "What can I do best?",
-    "playwright": "I have been using Playwright for half a year and am able to test complex pages. Through my work, I have gathered a variety of knowledge."
+    "playwright": "I have been using Playwright for half a year and am able to test complex pages. Through my work, I have gathered a variety of knowledge.",
+    "tailwind": "I have been using Tailwind for 1.5 years and have gained a lot of knowledge through the use of animations, working on many projects, and so on."
   }
 }

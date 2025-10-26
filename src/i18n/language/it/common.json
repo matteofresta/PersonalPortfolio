@@ -11,6 +11,7 @@
   "mainContent": {
     "title": "La mia attuale esperienza",
     "myExperience": "Quali sono i miei punti di forza?",
-    "playwright": "Uso Playwright da sei mesi e sono in grado di testare pagine complesse. Grazie al mio lavoro, ho acquisito una varietà di conoscenze."
+    "playwright": "Uso Playwright da sei mesi e sono in grado di testare pagine complesse. Grazie al mio lavoro, ho acquisito una varietà di conoscenze.",
+    "tailwind": "Uso Tailwind da un anno e mezzo e ho acquisito molta conoscenza attraverso l'uso di animazioni, la realizzazione di molti progetti e così via."
   }
 }
