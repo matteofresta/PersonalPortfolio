@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { columnConfig } from "./config/columnConfig";
 import Hamburger from "hamburger-react";
+import { Switch } from "@/components/Switch/Switch.tsx";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="w-full h-24 shadow-2xl flex fixed bg-white z-50 justify-between items-center px-10">
+      <div className="w-full dark:bg-primary-foreground h-24 shadow-2xl flex fixed bg-white z-50 justify-between items-center px-10">
         <div></div>
         <div></div>
         <div className="flex items-center gap-10">
@@ -26,7 +27,7 @@ export const Navbar = () => {
               <ul className="flex gap-4">
                 {columnConfig.map((item) => (
                   <li key={item.key}>
-                    <a className="text-black text-md" href={item.path}>
+                    <a className="text-black text-md dark:text-white" href={item.path}>
                       {t(item.label)}
                     </a>
                   </li>
@@ -43,25 +44,25 @@ export const Navbar = () => {
             animate={{ scale: 1 }}
           >
             <DropdownMenu modal={false}>
-              <DropdownMenuTrigger className="bg-white hover:scale-105 duration-300 cursor-pointer backdrop-blur-sm border border-gray-300 shadow-sm rounded-md px-4 py-2 w-24 text-center">
+              <DropdownMenuTrigger className="bg-white dark:bg-primary-foreground hover:scale-105 duration-300 cursor-pointer backdrop-blur-sm border border-gray-300 shadow-sm rounded-md px-4 py-2 w-24 text-center">
                 {i18n.language.toUpperCase()}
               </DropdownMenuTrigger>
 
               <DropdownMenuContent className="bg-gray-500/20 backdrop-blur-lg mt-2 rounded-xl flex flex-col gap-2 border-none shadow-2xl w-40 p-2">
                 <DropdownMenuItem
-                  className="focus:bg-white/20 bg-white/80 rounded-md duration-400 p-2 cursor-pointer"
+                  className="focus:bg-white/20 bg-white/80 dark:bg-gray-900/20 dark:hover:bg-white/30 rounded-md duration-500 p-2 cursor-pointer"
                   onSelect={() => i18n.changeLanguage("de")}
                 >
                   Deutsch
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="focus:bg-white/20 bg-white/80 rounded-md duration-400 p-2 cursor-pointer"
+                  className="focus:bg-white/20 bg-white/80 dark:bg-gray-900/20 dark:hover:bg-white/30 rounded-md duration-500 p-2 cursor-pointer"
                   onSelect={() => i18n.changeLanguage("en")}
                 >
                   English
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  className="focus:bg-white/20 bg-white/80 rounded-md duration-400 p-2 cursor-pointer"
+                  className="focus:bg-white/20 bg-white/80 dark:bg-gray-900/20 dark:hover:bg-white/30 rounded-md duration-500 p-2 cursor-pointer"
                   onSelect={() => i18n.changeLanguage("it")}
                 >
                   Italiano
@@ -72,6 +73,7 @@ export const Navbar = () => {
           <div className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
           </div>
+            <Switch />
         </div>
       </div>
       {isOpen && (
