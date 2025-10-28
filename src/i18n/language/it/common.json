@@ -4,6 +4,14 @@
     "About": "Chi sono",
     "Contact": "Contattami"
   },
+  "form": {
+    "writeEmail": "Scrivi un'email",
+    "emailAdress": "maxmustermann@gmail.com",
+    "placeholder": "Scrivi un messaggio...",
+    "send": "Invia",
+    "email": "Email",
+    "message": "Messaggio"
+  },
   "header": {
     "greeting": "Benvenuto nella mia Pagina",
     "myName": "Sono Matteo Fresta e sono un programmatore React"

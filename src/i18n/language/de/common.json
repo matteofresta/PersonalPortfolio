@@ -4,6 +4,14 @@
     "About": "Über Mich",
     "Contact": "Kontakte"
   },
+  "form": {
+    "writeEmail": "Schreiben sie mir eine E-Mail",
+    "emailAdress": "maxmustermann@gmail.com",
+    "placeholder": "Nachricht schreiben...",
+    "send": "Senden",
+    "email": "E-Mail",
+    "message": "Nachricht"
+  },
   "header": {
     "greeting": "Willkommen auf meiner Webseite",
     "myName": "Ich bin der Matteo Fresta und bin React Programmierer"

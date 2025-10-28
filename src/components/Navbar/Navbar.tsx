@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="w-full dark:bg-primary-foreground h-24 shadow-2xl flex fixed bg-white z-50 justify-between items-center px-10">
+      <div className="w-full dark:bg-primary-foreground h-24 md:shadow-2xl flex fixed bg-white z-50 justify-between items-center px-10">
         <div></div>
         <div></div>
         <div className="flex items-center gap-10">
@@ -70,17 +70,19 @@ export const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </motion.div>
+
+
+            <Switch />
           <div className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
           </div>
-            <Switch />
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white border-t-2 border-gray-200 z-50 fixed w-full h-full">
+        <div className="md:hidden bg-white border-t-2 dark:bg-primary-foreground dark:border-gray-500 border-gray-200 z-30 fixed top-24 w-full h-full">
           <div className="flex justify-center pt-20">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="bg-white hover:scale-105 duration-300 cursor-pointer backdrop-blur-sm border border-gray-300 shadow-sm rounded-md px-4 py-2 w-24 text-center">
+            <DropdownMenu modal={false}>
+              <DropdownMenuTrigger className="bg-white dark:bg-primary-foreground hover:scale-105 duration-300 cursor-pointer backdrop-blur-sm border border-gray-300 shadow-sm rounded-md px-4 py-2 w-24 text-center">
                 {i18n.language.toUpperCase()}
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-gray-500/20 backdrop-blur-lg mt-2 rounded-xl flex flex-col gap-2 border-none shadow-2xl w-40 p-2">
@@ -109,7 +111,7 @@ export const Navbar = () => {
             <ul className="flex flex-col gap-4 items-center pb-14 pt-4">
               {columnConfig.map((item) => (
                 <li key={item.key}>
-                  <a className="text-black text-2xl" href={item.path}>
+                  <a className="text-black text-2xl dark:text-white" href={item.path}>
                     {t(item.label)}
                   </a>
                 </li>

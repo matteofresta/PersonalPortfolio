@@ -8,6 +8,14 @@
     "greeting": "Welcome to my website",
     "myName": "I am Matteo Fresta and I am a React Programmer"
   },
+  "form": {
+    "writeEmail": "Write me an email",
+    "emailAdress": "maxmustermann@gmail.com",
+    "placeholder": "Write a message...",
+    "send": "Send",
+    "email": "Email",
+    "message": "Message"
+  },
   "mainContent": {
     "title": "My Experience",
     "myExperience": "What can I do best?",
